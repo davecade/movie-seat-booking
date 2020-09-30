@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+:root {
+    --bg-colour: #0B0B43;
+    --seat-color: #1E1E62;
+    --selected-color: #2C61FF;
+}
+
+body {
+    background: var(--bg-colour);
+    color: #fff;
+    font-family: "Quicksand", sans-serif;
+}
