@@ -10,4 +10,70 @@ body {
     background: var(--bg-colour);
     color: #fff;
     font-family: "Quicksand", sans-serif;
+    font-size: 1.5rem;
+}
+
+.container, .selection, .type, .seat-state, .type, .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    flex-direction: column;
+    height: 100vh;
+}
+
+.selection {
+    width: 100%;
+}
+
+.selection P {
+    margin: 0 1rem;
+}
+
+.selection .movies {
+    border-radius: 10px;
+    height: 3rem;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+}
+
+.seat-state {
+    background: #04042A;
+    padding: 0 2rem;
+    margin: 4rem;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.seat {
+    background-color: var(--seat-color);
+    padding: 15px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    transition: all ease-in-out .2s;
+    margin: 0.3rem;
+}
+
+.seat:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.type {
+    margin: 0 1rem;
+}
+
+
+.type * {
+    margin: 1rem 0.5rem;
+}
+
+.seat.selected {
+    background: var(--selected-color);
+}
+
+.seat.occupied {
+    background: #fff;
 }
