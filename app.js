@@ -30,3 +30,8 @@ movie.addEventListener('change', ()=> {
     movieCost = movie.value;
     displayCost(`$${movieCost*amountOfSeatsSelected}`)
 })
+
+
+//copy the selected seats into arr
+//Map through Array
+//return a new array if indexes
